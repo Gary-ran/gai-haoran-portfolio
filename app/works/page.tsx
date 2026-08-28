@@ -2,8 +2,6 @@ import SiteNav from '../components/SiteNav';
 import SiteFooter from '../components/SiteFooter';
 
 export default function WorksPage(){return <main><div className="shell"><SiteNav active="works"/>
-  <section className="inner-hero works-hero"><p className="overline">WORKS & EVIDENCE</p><h1>从规则到界面，<br/>每一步都<span className="marker">可以检查。</span></h1><p>交互项目展示我如何拆解流程、设计判断维度并完成产品化表达；练习与真实经历单独标注，不混在一起。</p></section>
-
   <section className="works-section vibe-section"><div className="works-section-head"><div><p>01 / VIBE CODING</p><h2>交互式项目</h2></div><span>点击项目，进入可操作的完整界面</span></div>
     <div className="vibe-category-head"><span>AI TRAINER RELATED</span><h3>AI训练师相关</h3><p>围绕内容质检、模型评测、Bad Case和求职训练构建的交互工具。</p></div>
     <div className="vibe-grid">
