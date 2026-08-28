@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 type NavKey = 'home' | 'about' | 'works';
 
 const items: { key: NavKey; href: string; label: string }[] = [
@@ -11,12 +9,12 @@ const items: { key: NavKey; href: string; label: string }[] = [
 export default function SiteNav({ active }: { active: NavKey }) {
   return (
     <header className="site-nav">
-      <Link className="nav-brand" href="/" aria-label="盖皓然首页">GH.</Link>
+      <a className="nav-brand" href="/" aria-label="盖皓然首页">GH.</a>
       <nav aria-label="主要导航">
         {items.map((item) => (
-          <Link className={active === item.key ? 'active' : ''} href={item.href} key={item.key} prefetch>
+          <a className={active === item.key ? 'active' : ''} href={item.href} key={item.key}>
             {item.label}
-          </Link>
+          </a>
         ))}
       </nav>
       <a className="nav-mail" href="mailto:13225238530@163.com" aria-label="发送邮件">✉</a>

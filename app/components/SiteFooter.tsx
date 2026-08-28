@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function SiteFooter() {
   return (
     <footer className="site-footer">
@@ -9,9 +7,9 @@ export default function SiteFooter() {
       </div>
       <nav className="footer-explore" aria-label="页脚导航">
         <h3>Explore</h3>
-        <Link href="/" prefetch>首页</Link>
-        <Link href="/about" prefetch>详细简历</Link>
-        <Link href="/works" prefetch>作品</Link>
+        <a href="/">首页</a>
+        <a href="/about">详细简历</a>
+        <a href="/works">作品</a>
       </nav>
       <div className="footer-connect">
         <h3>Connect</h3>
